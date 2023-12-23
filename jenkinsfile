@@ -6,7 +6,7 @@ pipeline{
 
         stage('Continous Download') {
             steps{
-                git branch: 'main', url: https://github.com/basalonje2/DEVOPS-PROJECT1.git
+                git branch: 'main', url: 'https://github.com/basalonje2/DEVOPS-PROJECT1.git'
             }
         }
     }
