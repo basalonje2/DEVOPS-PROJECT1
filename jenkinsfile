@@ -9,12 +9,12 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/basalonje2/DEVOPS-PROJECT1.git'
             }
         }
-        stage ('Unit Testing'){
+        stage('Unit Testing'){
             steps{
                 sh'mvn test' 
             }
         }
-        stage ('Integration Testing')
+        stage('Integration Testing')
             steps{
                 sh'mvn verify -DskipUnitTests' 
             }
